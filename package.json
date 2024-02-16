@@ -2,10 +2,9 @@
   "name": "hashmapproject",
   "version": "1.0.0",
   "description": "A project to develop a more thorough understanding of HashMap implementations.",
-  "main": "index.js",
-  "scripts": {
+  "main": "index.js","scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development"
+    "dev": "webpack --watch --mode development"
   },
   "keywords": [],
   "author": "",

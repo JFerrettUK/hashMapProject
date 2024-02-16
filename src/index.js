@@ -1,1 +1,3 @@
-console.log("test");
+import hashmap from "./hashmap";
+
+hashmap();
