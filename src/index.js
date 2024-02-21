@@ -1,6 +1,5 @@
 import hashmap from "./hashmap";
 
-// Initialize the hashmap
 const map = hashmap();
 
 console.log("--- Testing set and get ---");
