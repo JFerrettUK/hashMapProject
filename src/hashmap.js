@@ -102,7 +102,42 @@ function hashmap(key) {
     return newArray;
   }
 
-  return { set, get, has, remove, length, clear, keys, buckets };
+  function values() {
+    let newArray = [];
+
+    for (const property in buckets) {
+      for (let i = 0; i < buckets[property].length; i++) {
+        newArray.push(buckets[property][i].value);
+      }
+    }
+
+    return newArray;
+  }
+
+  function entries() {
+    let newArray = [];
+
+    for (const property in buckets) {
+      for (let i = 0; i < buckets[property].length; i++) {
+        newArray.push(buckets[property][i]);
+      }
+    }
+
+    return newArray;
+  }
+
+  return {
+    set,
+    get,
+    has,
+    remove,
+    length,
+    clear,
+    keys,
+    values,
+    entries,
+    buckets,
+  };
 }
 
 export default hashmap;
